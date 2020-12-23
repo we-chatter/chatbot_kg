@@ -31,10 +31,3 @@ class ChatBotGraph():
             return answer
         else:
             return '\n'.join(final_answers)
-
-# if __name__ == '__main__':
-#     handler = ChatBotGraph()
-#     while 1:
-#         question = input('用户:')
-#         answer = handler.chat_main(question)
-#         print('小笨:', answer)

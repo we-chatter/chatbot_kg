@@ -13,9 +13,9 @@
  
 '''
 
-
 from collections import OrderedDict
 from SPARQLWrapper import SPARQLWrapper, JSON
+
 
 class SparqlQuery:
     """
@@ -74,6 +74,7 @@ class SparqlQuery:
                     values.append(value)
             return values
 
+
 if __name__ == '__main__':
     fuseki = SparqlQuery()
     query_test = """
@@ -97,4 +98,3 @@ if __name__ == '__main__':
     print(str(query_head), str(query_result))
     result_value = fuseki.get_sparql_result_value(result)
     print(result_value)
-
